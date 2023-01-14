@@ -39,7 +39,7 @@ function scriptResult($siteURL,$status,$reason)
 #Install-Module -Name Microsoft.Online.SharePoint.PowerShell
 
 # FLAG FOR AUDIT ONLY - setting this to true will only audit and not restore any files. Note: logging remains the same so it will
-$auditOnly = $true
+$auditOnly = $false
 
 # Set up working directory for output Files, change to desired location
 $workingDir = "C:\Users\Public\Documents\"
@@ -48,7 +48,7 @@ $auditFile = $workingDir + (get-date -f "yyyyMMdd_HHmm") + "_ASRlinkRestore.txt"
 # This is the date we want to check from (13/01 = start of ASR rule problems)
 $startDate = get-date -Year 2023 -Month 1 -Day 13 -Hour 0 -Minute 0 -Second 0
 
-# Specify your tenant name
+# Specify your tenant name here
 $tenant = "yourTenantName"
 
 # Specify UPN of the account being used to run this
