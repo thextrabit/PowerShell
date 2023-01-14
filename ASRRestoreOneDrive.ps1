@@ -46,8 +46,7 @@ $workingDir = "C:\Users\Public\Documents\"
 $auditFile = $workingDir + (get-date -f "yyyyMMdd_HHmm") + "_ASRlinkRestore.txt"
 
 # This is the date we want to check from (13/01 = start of ASR rule problems)
-# This is in UK date format, change this accordingly for your local formatting
-$startDate = get-date "13/01/2023 00:00:00"
+$startDate = get-date -Year 2023 -Month 1 -Day 13 -Hour 0 -Minute 0 -Second 0
 
 # Specify your tenant name
 $tenant = "yourTenantName"
