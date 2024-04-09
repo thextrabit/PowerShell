@@ -1,4 +1,4 @@
-﻿Function get-PowerPlatformPremiumInfo
+﻿Function Get-PowerPlatformPremiumInfo
 {
    <#
     .SYNOPSIS
